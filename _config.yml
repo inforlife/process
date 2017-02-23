@@ -1,0 +1,66 @@
+# Base configuration
+permalink: /:title
+exclude: [".ruby-version", "Gemfile", "Gemfile.lock", "README.md", "CONTRIBUTING.md"]
+markdown: kramdown
+highlighter: rouge
+
+# Title
+name: THE PROCESS
+subtitle: Process adopted by InfoRLife SA in developing software applications.
+
+# When using this template with a project page set the baseurl to '/project-name'
+# For user/organization pages set this to an empty string
+# When working locally use jekyll serve --baseurl '' so that you can view everything at localhost:4000
+# See http://jekyllrb.com/docs/github-pages/ for more info
+#baseurl: ''
+baseurl: 'http://inforlife.github.io/process'
+
+# Author/Organization info to be displayed in the templates
+author:
+  name: The Software Development Team at InfoRLife SA
+  url: https://github.com/inforlife
+
+# Point the logo URL at a file in your repo or hosted elsewhere by your organization
+logourl: https://avatars1.githubusercontent.com/u/272616?v=3&s=75
+logoalt: InfoRLife SA logo
+
+# Navigation
+# List links that should appear in the site sidebar here
+navigation:
+- text: Home
+  url: index.html
+  internal: true
+- text: Introduction
+  url: intro.html
+  internal: true
+- text: Overview
+  url: overview.html
+  internal: true
+- text: Features gathering
+  url: gathering.html
+  internal: true
+- text: Development
+  url: development.html
+  internal: true
+- text: Release
+  url: release.html
+  internal: true
+- text: Project setup
+  url: setup.html
+  internal: true
+- text: Continuous Integration
+  url: ci.html
+  internal: true
+#- text: DOCter Repo
+#  url: https://github.com/cfpb/DOCter
+#  internal: false
+
+# Repo list
+# List repos that you would like to appear on the homepage here
+# repos:
+#- name: Repo Name
+#  description: Repo description
+#  url: https://github.com/acsinfo/repo-name
+
+# Style Variables
+brand_color: "#2cb34a"
