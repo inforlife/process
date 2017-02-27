@@ -9,7 +9,7 @@ All the source code is managed using [Git](https://git-scm.com/), a distributed 
 
 We adopt a slightly modified version of what it is known as [GitHub Flow](https://guides.github.com/introduction/flow/) to organize how features are implemented.
 
-Each project comes with one long-lasting branches that live for the entire span of project. The **master** branch contains the code ready to be shipped to production. In addition to this branch, many feature branches (one for each implemented feature) are created right before starting to implement a feature and deleted once the feature is 'done'.
+Each project comes with one long-lasting branch that live for the entire span of project. The **master** branch contains the code ready to be shipped to production. In addition to this branch, many feature branches (one for each implemented feature) are created right before starting to implement a feature and deleted once the feature is 'done'.
 
 The shipped code is tracked through [GitHub Releases](https://help.github.com/articles/about-releases/). This enables us, if necessary, to create a new branch with the code running in production.
 
