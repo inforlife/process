@@ -20,4 +20,4 @@ Note that code review may be skipped for features developed through [pair progra
 
 To make sure nobody introduces changes into production without review, we have defined the following rules.
 
-1. Nobody can add code directly neither to **development**, but only through the merge of a pull request.
+1. Nobody can add code directly to **master**, but only through the merge of a pull request.
