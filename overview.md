@@ -3,13 +3,15 @@ layout: page
 title:  "Overview"
 ---
 
-At ACS Dobfar Info SA we have structured our process around [GitHub](https://github.com/). Thanks to all the available integrations, GitHub allows us to centralize the entire life cycle around a single product providing all the traceability information we need while keeping the process fairly easy to follow.
+At InfoRLife SA we have structured our process around [GitHub](https://github.com/). Thanks to all the available integrations, GitHub allows us to centralize the entire life cycle around a single product providing all the traceability information we need while keeping the process fairly easy to follow.
 
 All the source code is managed using [Git](https://git-scm.com/), a distributed version control system that keeps track of all the changes made during the application's live. Git comes with the concept of *branches*, a branch represents an independent line of development. They may be seen as a way to create a brand new working directory and project history.
 
 We adopt a slightly modified version of what it is known as [GitHub Flow](https://guides.github.com/introduction/flow/) to organize how features are implemented.
 
-Each project comes with two long-lasting branches that live for the entire span of project. The **master** branch contains the code currently running in production, while the **development** branch contains the code ready to be shipped to production. In addition to those branches, many feature branches (one for each implemented feature) are created right before starting to implement a feature and deleted once the feature is 'done'.
+Each project comes with one long-lasting branches that live for the entire span of project. The **master** branch contains the code ready to be shipped to production. In addition to this branch, many feature branches (one for each implemented feature) are created right before starting to implement a feature and deleted once the feature is 'done'.
+
+The shipped code is tracked through [GitHub Releases](https://help.github.com/articles/about-releases/). This enables us, if necessary, to create a new branch with the code running in production.
 
 We have currently divided our process into five main steps.
 
