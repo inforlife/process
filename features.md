@@ -42,9 +42,8 @@ An example of conditions of satisfaction is
 
 Conditions of satisfaction have to be checked as they are implemented.
 
-New conditons of satisfaction may be added until the feature is not marked as `done` if new conditions arise.
-
-Features can be labeled as `ready for review` only when all the conditions of satisfaction are checked out.
+If new conditions arise, they may be added until the corresponding PR is not merged.
+Features can be assigned to a reviewer only when all the conditions of satisfaction are checked out.
 
 ## PR
 The link to the GitHub PR of the branch that implements the feature. This is automatically added when the PR is opened by adding a reference to the issue itself.
