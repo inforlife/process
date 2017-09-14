@@ -5,7 +5,7 @@ title:  "Development"
 
 When a developer starts working on a new feature, right after creating the empty branch he opens in GitHub a [pull request](https://help.github.com/articles/using-pull-requests) to merge the feature branch into **master**. This is helpful as everyone can see what the other members of the team are working on by simply checking all the open pull requests.
 
-At every push to GitHub the feature branch goes through [CI](http://acsinfo.github.io/process/ci.html) to ensure the new code didn't break anything.
+At every push to GitHub the feature branch goes through [CI](https://inforlife.github.io/process/ci.html) to ensure the new code didn't break anything.
 
 When completed, the feature must be reviewed before it can be merged into **master**. So, the developer assigns the pull request to a  *reviewer* (another member of the team).
 As soon as possible, the reviewer looks through the pull request, adds comments where necessary, and, according to the outcome of the review, approves it or requests changes.

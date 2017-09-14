@@ -3,7 +3,7 @@ layout: page
 title:  "Features Gathering"
 ---
 
-The list of functionalities provided by an application are expressed as slightly modified [**user stories**](https://www.mountaingoatsoftware.com/agile/user-stories) and managed through GitHub Projects and Issues. Keeping the functionalities directly on GitHub, it makes easy to link a user story to the branch that implements it and to ensure full [traceability](http://acsinfo.github.io/process/traceability.html) of the features in the source code. In this way, features' history is available to anyone who would like to audit it.
+The list of functionalities provided by an application are expressed as slightly modified [**user stories**](https://www.mountaingoatsoftware.com/agile/user-stories) and managed through GitHub Projects and Issues. Keeping the functionalities directly on GitHub, it makes easy to link a user story to the branch that implements it and to ensure full [traceability](https://inforlife.github.io/process/traceability.html) of the features in the source code. In this way, features' history is available to anyone who would like to audit it.
 
 Every collaborator of the project who wishes to require new functionalities or report defects may create a new issue where he describes the feature he needs or the bug he has found.
 
@@ -11,9 +11,9 @@ Once a new issue is open by a collaborator, the development team reviews it in o
 
 GitHub issues are divided into three categories.
 
- - [Features](http://acsinfo.github.io/process/features.html)
- - [Fixes](http://acsinfo.github.io/process/fixes.html)
- - [Payoffs](http://acsinfo.github.io/process/payoffs.html)
+ - [Features](https://inforlife.github.io/process/features.html)
+ - [Fixes](https://inforlife.github.io/process/fixes.html)
+ - [Payoffs](https://inforlife.github.io/process/payoffs.html)
 
 According to their category a GitHub Issue needs specific information to be considered complete and so ready to be implemented.
 

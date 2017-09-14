@@ -15,8 +15,8 @@ The shipped code is tracked through [GitHub Releases](https://help.github.com/ar
 
 We have currently divided our process into five main steps.
 
-- [**Setup**](http://acsinfo.github.io/process/setup.html) - The activities performed by the team to  properly configure all the tools used to manage the project.
-- [**Gathering**](http://acsinfo.github.io/process/gathering.html) - The activities performed by the team and stakeholders to manage the list of functionalities stakeholders wish the applications have.
-- [**Development**](http://acsinfo.github.io/process/development.html) - The activities performed by the team from the checkout of a feature to its completion.
-- [**Release**](http://acsinfo.github.io/process/release.html) - The activities performed by the team to deploy a set of completed features to production.
+- [**Setup**](https://inforlife.github.io/process/setup.html) - The activities performed by the team to  properly configure all the tools used to manage the project.
+- [**Gathering**](https://inforlife.github.io/process/gathering.html) - The activities performed by the team and stakeholders to manage the list of functionalities stakeholders wish the applications have.
+- [**Development**](https://inforlife.github.io/process/development.html) - The activities performed by the team from the checkout of a feature to its completion.
+- [**Release**](https://inforlife.github.io/process/release.html) - The activities performed by the team to deploy a set of completed features to production.
 - **Operations** - The activities performed by the team to manage the applications once running in production (including the infrastructure the applications rely on).
