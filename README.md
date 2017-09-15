@@ -2,10 +2,10 @@
 
 Process adopted by InfoRLife SA in developing software applications.
 
-  - The documentation site is available at http://inforlife.github.io/process/
+  - The documentation site is available at https://inforlife.github.io/process/
 
 ## Usage
-Refer to [doc-scaffold](https://github.com/acsinfo/doc-scaffold).
+Refer to [doc-scaffold](https://github.com/inforlife/doc-scaffold).
 
 ## Credits
 

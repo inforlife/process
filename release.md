@@ -37,7 +37,7 @@ The successful completion of a new release is notified to the development team w
 
 #### First deployment
 
-Before an application may be deployed to production for the first time, few steps are required. They are described in the [project setup](http://inforlife.github.io/process/setup.html) page.
+Before an application may be deployed to production for the first time, few steps are required. They are described in the [project setup](https://inforlife.github.io/process/setup.html) page.
 
 
 #####Notes:
