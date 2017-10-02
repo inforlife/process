@@ -13,17 +13,17 @@ Moreover, often users may not know exactly what they need before interacting wit
 
 Because of all the downsides, during winter 2001 several prominent software developers (among them [Kent Beck](http://en.wikipedia.org/wiki/Kent_Beck), [Martin Fowler](http://en.wikipedia.org/wiki/Martin_Fowler) and [Robert C. Martin](http://en.wikipedia.org/wiki/Robert_Cecil_Martin)) debated alternative methods for software development and, as a result of the discussion, they published the [Manifesto for Agile Software Development](http://agilemanifesto.org).
 
-The first of the twelve principles listed in the manifesto states:
+The first of the twelve principles listed in the manifesto states
 
 > Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.
 
-The Software Development Team at InfoRLife SA believes the same and it is convinced that, even if waterfall is among the life sciences industry still the *de facto*[1](#notes) standard, the best way to achieve so is through an iterative process where users are involved throughout the development process and developers follow Test Driven Development (TDD) as the methodology to guide the *software design*.
+The Software Development Team at InfoRLife believes the same and it is convinced that, even if waterfall is among the life sciences industry still the *de facto*[1](#notes) standard, the best way to achieve so is through an iterative process where users are involved throughout the development process and developers follow Test Driven Development (TDD) as the methodology to guide the *software design*.
 
-This approach to software development not only delivers a better product but it also makes easier, as shown throughout this site, to provide applications that satisfy what U.S. Food and Drug Administration considers software validation to be[2](#notes):
+This approach to software development not only delivers a better product but it also makes easier, as shown throughout this site, to provide applications that satisfy what U.S. Food and Drug Administration considers software validation to be[2](#notes)
 
 > confirmation by examination and provision of objective evidence that software specifications conform to user needs and intended uses, and that the particular requirements implemented through software can be consistently fulfilled.
 
 
 #####Notes:
-1. de facto because no regulation indicates which development process must be used. For instance, U.S. Food and Drug Administration [General Principles of Software Validation; Final Guidance for Industry and FDA Staff](http://www.fda.gov/downloads/MedicalDevices/DeviceRegulationandGuidance/GuidanceDocuments/ucm085371.pdf) states on page 14: *This guidance does not recommend the use of any specific software life cycle model. Software developers should establish a software life cycle model that is appropriate for their product and organization.*   
-2. page 6 - U.S. Food and Drug Administration [General Principles of Software Validation; Final Guidance for Industry and FDA Staff](http://www.fda.gov/downloads/MedicalDevices/DeviceRegulationandGuidance/GuidanceDocuments/ucm085371.pdf)
+1. De facto because no regulation indicates which development process must be used. For instance, U.S. Food and Drug Administration [General Principles of Software Validation; Final Guidance for Industry and FDA Staff](http://www.fda.gov/downloads/MedicalDevices/DeviceRegulationandGuidance/GuidanceDocuments/ucm085371.pdf) states on page 14: *This guidance does not recommend the use of any specific software life cycle model. Software developers should establish a software life cycle model that is appropriate for their product and organization.*   
+2. Page 6 - U.S. Food and Drug Administration [General Principles of Software Validation; Final Guidance for Industry and FDA Staff](http://www.fda.gov/downloads/MedicalDevices/DeviceRegulationandGuidance/GuidanceDocuments/ucm085371.pdf)
