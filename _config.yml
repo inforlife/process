@@ -36,8 +36,8 @@ navigation:
 - text: Overview
   url: overview.html
   internal: true
-- text: Features gathering
-  url: gathering.html
+- text: Issue gathering
+  url: issue-gathering.html
   internal: true
 - text: Development
   url: development.html

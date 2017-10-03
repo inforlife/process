@@ -1,9 +1,9 @@
 ---
 layout: page
-title:  "Features Gathering"
+title:  "Issue Gathering"
 ---
 
-The list of functionalities provided by an application are expressed as slightly modified [**user stories**](https://www.mountaingoatsoftware.com/agile/user-stories) and managed through GitHub Projects and Issues. Keeping the functionalities directly on GitHub, it makes easy to link a user story to the branch that implements it and to ensure full [traceability](https://inforlife.github.io/process/traceability.html) of the features in the source code. In this way, features' history is available to anyone who would like to audit it.
+The list of functionalities provided by an application are expressed as modified [**user stories**](https://www.mountaingoatsoftware.com/agile/user-stories) and managed through GitHub Projects and Issues. Keeping the functionalities directly on GitHub, it makes easy to link a user story to the branch that implements it and to ensure full [traceability](https://inforlife.github.io/process/traceability.html) of the features in the source code. In this way, features' history is available to anyone who would like to audit it.
 
 Every collaborator of the project who wishes to require new functionalities or report defects may create a new issue where he describes the feature he needs or the bug he has found.
 

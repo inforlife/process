@@ -3,20 +3,32 @@ layout: page
 title:  "Overview"
 ---
 
-At InfoRLife SA we have structured our process around [GitHub](https://github.com/). Thanks to all the available integrations, GitHub allows us to centralize the entire life cycle around a single product providing all the traceability information we need while keeping the process fairly easy to follow.
+All our source code is managed using Git, a distributed version control system that keeps track of all the changes made during its life and shared using GitHub.
 
-All the source code is managed using [Git](https://git-scm.com/), a distributed version control system that keeps track of all the changes made during the application's live. Git comes with the concept of *branches*, a branch represents an independent line of development. They may be seen as a way to create a brand new working directory and project history.
+When we start working on a new project, we [setup](https://inforlife.github.io/process/setup.html) the GitHub repository and all the integrations (CI, static analysis, code coverage...) we need.
 
-We adopt a slightly modified version of what it is known as [GitHub Flow](https://guides.github.com/introduction/flow/) to organize how features are implemented.
+Besides providing a central repository where code can be synchronized, GitHub, thanks to the available integrations, has allowed us to build the entire life cycle around a single service providing all the pieces of evidence required by regulation while keeping the process fairly easy to understand.
 
-Each project comes with one long-lasting branch that live for the entire span of project. The **master** branch contains the code ready to be shipped to production. In addition to this branch, many feature branches (one for each implemented feature) are created right before starting to implement a feature and deleted once the feature is 'done'.
+We [gather](https://inforlife.github.io/process/issue-gathering.html) the functionalities provided by our applications on GitHub Issues and manage them with GitHub Projects.
 
-The shipped code is tracked through [GitHub Releases](https://help.github.com/articles/about-releases/). This enables us, if necessary, to create a new branch with the code running in production.
+By keeping the functionalities directly in GitHub, we can easily link them to the branch where they are implemented and ensure full [traceability](https://inforlife.github.io/process/traceability.html) of any change in the source code. In this way, the entire application's history is available to anyone who would like to audit it.
 
-We have currently divided our process into five main steps.
+We [develop](https://inforlife.github.io/process/development.html) in iterations. When a set of Issues is ready to be implemented, a GitHub Milestone is created, the Issues linked to it and prioritized.
 
-- [**Setup**](https://inforlife.github.io/process/setup.html) - The activities performed by the team to  properly configure all the tools used to manage the project.
-- [**Gathering**](https://inforlife.github.io/process/gathering.html) - The activities performed by the team and stakeholders to manage the list of functionalities stakeholders wish the applications have.
-- [**Development**](https://inforlife.github.io/process/development.html) - The activities performed by the team from the checkout of a feature to its completion.
-- [**Release**](https://inforlife.github.io/process/release.html) - The activities performed by the team to deploy a set of completed features to production.
-- **Operations** - The activities performed by the team to manage the applications once running in production (including the infrastructure the applications rely on).
+Team members start implementing the issues according to their priority (from highest to lowest).
+
+When a member starts working on a new issue, he opens a GitHub Pull request to merge the branch into `master`. This is helpful as everyone can see what the other members are working on by simply checking all the open Pull requests.
+
+When completed, the issue must be reviewed before it can be merged into `master`. So, after all automatic checks pass, the Pull request is assigned to a reviewer (another member of the team).
+
+The reviewer looks through the Pull request and, according to the outcome of the review, approves it or requests changes.
+
+Once the Pull request is approved, the branch owner closes it by merging the branch into `master` and marks the issue as **completed**.
+
+All **completed** Issues are periodically reviewed by the issue owner who accepts them or asks for modifications.
+
+Once an Issue is accepted, a team member marks the issue as **done** and closes it.
+
+When all the issues included in the milestone have been closed, we [release](https://inforlife.github.io/process/release.html) them via a GitHub Release and the code is deployed into production using Docker as the underlying platform.
+
+We [operate](https://inforlife.github.io/process/operations.html) production applications to guarantee their availability and to maintain their validated state until their retirement.
