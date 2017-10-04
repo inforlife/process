@@ -24,6 +24,9 @@ author:
 logourl: https://avatars1.githubusercontent.com/u/272616?v=3&s=75
 logoalt: InfoRLife SA logo
 
+
+include: ['services']
+
 # Navigation
 # List links that should appear in the site sidebar here
 navigation:
