@@ -12,24 +12,26 @@ The collaborators added to each repository are
 
 - All members of the development team
 - [InfoRBot](https://github.com/inforbot).
-- At least one issue owner [1](#notes)(a member of the QA unit)
+- At least one issue approver [1](#notes)(a member of the QA unit)
 
 Other personnel is added upon their request. We welcome all the users as collaborators.
 
 ## Labels
 
-The labels below are added to the repository
+The Labels below are added to the repository
 
+- Approved
 - Enhancement
 - Feature
 - Fix
 - Payoff
+- Rejected
 
 Other labels may be added according to the needs.
 
 ## Projects
 
-The `Development` project is created to the repository. The project has the column below
+The `Development` Project is created to the repository. The project has the column below
 
 - Backlog
 - In Progress

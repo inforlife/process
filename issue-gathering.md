@@ -3,27 +3,31 @@ layout: page
 title:  "Issue Gathering"
 ---
 
-The list of functionalities provided by an application are expressed as modified [**user stories**](https://www.mountaingoatsoftware.com/agile/user-stories) and managed through GitHub Projects and Issues. Keeping the functionalities directly on GitHub, it makes easy to link a user story to the branch that implements it and to ensure full [traceability](https://inforlife.github.io/process/traceability.html) of the features in the source code. In this way, features' history is available to anyone who would like to audit it.
+We manage project requirements (both functional and non-functional) with GitHub Issues. Thus, we refer to requirements as issues.
 
-Every collaborator of the project who wishes to require new functionalities or report defects may create a new issue where he describes the feature he needs or the bug he has found.
+Keeping the issues directly on GitHub, it makes easy to link them to the branch (and pull request) that implements them and to ensure full [traceability](https://inforlife.github.io/process/traceability.html) in the source code. In this way, issues' history is available to anyone who would like to audit it.
 
-Once a new issue is open by a collaborator, the development team reviews it in order to gather any missing information, to create a user story that complies with the defined standard.
+Every collaborator of the project who wishes to add a new issue creates a new GitHub Issue where he describes what he would like to be implemented or the error he has found. Once done, the collaborator assigns the Issue to a development team member.
 
-GitHub issues are divided into three categories.
+The team member reviews (alone or with other members) the issue in order to gather any missing information and, if needed, to standardize it.
 
- - [Features](https://inforlife.github.io/process/features.html)
- - [Fixes](https://inforlife.github.io/process/fixes.html)
- - [Payoffs](https://inforlife.github.io/process/payoffs.html)
+We have divided GitHub Issues into the five categories below.
 
-According to their category a GitHub Issue needs specific information to be considered complete and so ready to be implemented.
+- [Features](https://inforlife.github.io/process/issues/features.html)
+- [Fixes](https://inforlife.github.io/process/issues/fixes.html)
+- [Enhancements](https://inforlife.github.io/process/issues/enhancements.html)
+- [Payoffs](https://inforlife.github.io/process/issues/payoffs.html)
+- [Others](https://inforlife.github.io/process/issues/others.html)
 
-## Story sizing
+According to its category, a GitHub Issue needs specific information to be considered complete and so ready to be implemented.
 
-Like many other aspects of software product management, there isn’t a universal right size for a user story. A user story may require from a couple of hours to a few days to be implemented. When defining user stories, the development team applies the following criteria.
+**The only updates allowed without being described in an Issue are "dependency upgrades" such are upgrading the version of the Ruby programming language or that of a Ruby Gem used for the project.
+Any other change in the source code must become from an approved GitHub Issue.**
 
- - A story should be small enough for the team to understand it.
- - A story should be small enough to be created in in a short time period.
- - A story should be big enough to represent business value in its own right.
- - A story should be big enough to be deliverable in its own right.
+## Approval
 
-In case a user story seems too big, it can be broken down into multiple stories.
+Once the team member considers the issue ready for implementation, it assigns it to an issue approver. If multiple approvers are collaborating on a repository, the team member simply picks one up.
+
+The approver then reviews the issue and approves (or rejects) its implementation by assigning to the Issue itself the corresponding Label. The approver may also add a comment.
+
+Before the begin of an iteration, the team leader adds all the approved issues to the 'Backlog' column of the `Development` Project and prioritizes them placing the most relevant above all others.

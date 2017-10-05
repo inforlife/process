@@ -8,7 +8,7 @@ Payoffs reduce [technical debt](http://martinfowler.com/bliki/TechnicalDebt.html
 ## Name
 Few words that identify the improvement.
 
-An example of name is `optimize notifications`
+An example of name is `Optimize notifications`
 
 ## Description
 A summary of the concerns with the current design.
@@ -23,10 +23,9 @@ The current design doesn't allow to easily introduce, in addition to email, othe
 This pays off debt introduced in [reset password].
 {% endhighlight %}
 
-## PR
-The link to the GitHub PR of the branch that reduces the technical debt. This is automatically added when the PR is opened by adding a reference to the issue itself.
+## Pull request
+Since we have decided to refer the Issue number in a comment when opening Pull requests, GitHub automatically links the Issue to the Pull request that implements it. This allows us to have full traceability.
 
 ## Labels
 At least `Payoff` should be assigned to the card.
-
 Other labels may be assigned according to specific needs.
