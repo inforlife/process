@@ -30,4 +30,4 @@ Once the team member considers the issue ready for implementation, it assigns it
 
 The approver then reviews the issue and approves (or rejects) its implementation by assigning to the Issue itself the corresponding Label. The approver may also add a comment.
 
-Before the begin of an iteration, the team leader adds all the approved issues to the 'Backlog' column of the `Development` Project and prioritizes them placing the most relevant above all others.
+Before the begin of an iteration, the team leader adds all the approved issues to the 'Backlog' column of the `Development` Project and prioritizes them placing the most relevant above all others. The team leader may also already assign specific Issues to specific team members.

@@ -5,10 +5,12 @@ title:  "Continuous Integration"
 
 [Continuous Integration](http://martinfowler.com/articles/continuousIntegration.html) (CI) is a software development practice where members of a team integrate their code frequently against a controlled source code repository. This can ensure nothing specific to the developer's machine is making the tests pass or features developed in parallel may create side effects when merged together.
 
-Thanks to the integrations offered by GitHub, every time new code is pushed to Github, [CircleCI](https://circleci.com/) (the CI service we currently use) generates an automated build, verifying the integration of the new code with the existing code base and posts the outcome directly on GitHub pull request.
+Thanks to the features offered by GitHub, every time new code is pushed to Github, a CI service generates an automated build, verifying the integration of the new code with the existing code base and posts the outcome directly to GitHub Pull request.
 
-GitHub now allows us to enforce a rule that a pull request may be merged **only** if all the checks (CI build and [CodeClimate](https://codeclimate.com) review.) pass. **This guarantees that it is not possible for code with failing specifications to move from a feature branch to master and eventually to production**.
+Due to the standard protection rules, we define on each repository, any Pull request may be merged **only** if all CI build passes.
 
-One of the reason why we have chosen CircleCI is because it allows us to configure our build process through a [configuration file](https://circleci.com/docs/configuration/) that is part of the repository itself. In this way, it is very clear which actions are performed as part of the build and it is easy to update those actions when necessary.
+**This guarantees that it is not possible for code with failing specifications to move from a feature branch to master and eventually to production**.
 
-An history of all the builds done throughout the project, may be found on CircleCI web application.
+All the CI services we use allow us to configure our build process through configuration files that are checked in as part of the repository itself. In this way, the configuration is reviewed like all the other code and it is easy to update those actions when necessary. Moreover, it is always clear which actions are performed during the build.
+
+A history of all the builds done throughout the project may be found browsing the CI service web application.
