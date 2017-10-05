@@ -19,13 +19,13 @@ Team members start implementing the issues according to their priority (from hig
 
 When a member starts working on a new issue, he opens a GitHub Pull request to merge the branch into `master`. This is helpful as everyone can see what the other members are working on by simply checking all the open Pull requests.
 
-When completed, the issue must be reviewed before it can be merged into `master`. So, after all automatic checks pass, the Pull request is assigned to a reviewer (another member of the team).
+When completed, the issue [must be reviewed](https://inforlife.github.io/process/code-review.html) before it can be merged into `master`. So, after all automatic checks pass, the Pull request is assigned to a reviewer (another member of the team).
 
 The reviewer looks through the Pull request and, according to the outcome of the review, approves it or requests changes.
 
 Once the Pull request is approved, the branch owner closes it by merging the branch into `master` and marks the issue as **completed**.
 
-All **completed** Issues are periodically reviewed by the issue owner who accepts them or asks for modifications.
+All **completed** Issues are periodically reviewed by the issue owners who [accepts them or asks for modifications](https://inforlife.github.io/process/user-acceptance.html).
 
 Once an Issue is accepted, a team member marks the issue as **done** and closes it.
 

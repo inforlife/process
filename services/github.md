@@ -20,6 +20,7 @@ Other personnel is added upon their request. We welcome all the users as collabo
 
 The Labels below are added to the repository
 
+- Accepted
 - Approved
 - Enhancement
 - Feature
