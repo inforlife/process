@@ -9,7 +9,7 @@ When we start working on a new project, we [setup](https://inforlife.github.io/p
 
 Besides providing a central repository where code can be synchronized, GitHub, thanks to the available integrations, has allowed us to build the entire life cycle around a single service providing all the pieces of evidence required by regulation while keeping the process fairly easy to understand.
 
-We [gather](https://inforlife.github.io/process/issue-gathering.html) the functionalities provided by our applications on GitHub Issues and manage them with GitHub Projects.
+We define the functionalities provided by our applications on GitHub Issues and [manage](https://inforlife.github.io/process/issues.html) them with GitHub Projects.
 
 By keeping the functionalities directly in GitHub, we can easily link them to the branch where they are implemented and ensure full [traceability](https://inforlife.github.io/process/traceability.html) of any change in the source code. In this way, the entire application's history is available to anyone who would like to audit it.
 
@@ -25,7 +25,7 @@ The reviewer looks through the Pull request and, according to the outcome of the
 
 Once the Pull request is approved, the branch owner closes it by merging the branch into `master` and marks the issue as **completed**.
 
-All **completed** Issues are periodically reviewed by the issue owners who [accepts them or asks for modifications](https://inforlife.github.io/process/user-acceptance.html).
+All **completed** Issues are periodically reviewed by the issue owners who [accepts them or asks for modifications](https://inforlife.github.io/process/iterations.html#user-acceptance).
 
 Once an Issue is accepted, a team member marks the issue as **done** and closes it.
 

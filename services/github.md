@@ -66,4 +66,4 @@ With our setup, checks marked as `required` must `pass` in order to be able to m
 
 #####Notes:
 
-1. For more details regarding issue owners may be found at the [issue gathering page](https://inforlife.github.io/process/issue-gathering.html).
+1. For more details regarding issue owners may be found at the [issue management page](https://inforlife.github.io/process/issues.html).

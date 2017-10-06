@@ -42,8 +42,8 @@ navigation:
 - text: Project Setup
   url: project-setup.html
   internal: true
-- text: Issue Gathering
-  url: issue-gathering.html
+- text: Issues
+  url: issues.html
   internal: true
 - text: Development
   url: development.html

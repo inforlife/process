@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Issue Gathering"
+title:  "Issues"
 ---
 
 We manage project requirements (both functional and non-functional) with GitHub Issues. Thus, we refer to requirements as issues.
@@ -29,5 +29,3 @@ Any other change in the source code must become from an approved GitHub Issue.**
 Once the team member considers the issue ready for implementation, it assigns it to an issue approver. If multiple approvers are collaborating on a repository, the team member simply picks one up.
 
 The approver then reviews the issue and approves (or rejects) its implementation by assigning to the Issue itself the corresponding Label. The approver may also add a comment.
-
-Before the begin of an iteration, the team leader adds all the approved issues to the 'Backlog' column of the `Development` Project and prioritizes them placing the most relevant above all others. The team leader may also already assign specific Issues to specific team members.

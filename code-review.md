@@ -31,4 +31,6 @@ Confirmed issues are discussed with the branch owner after the review is complet
 
 Once there are no more `Confirmed` issues, the reviewer approves the review and, optionally, add a comment.
 
-As of October 2017,  Code Climate does not require a formal approval to post a passing check.  If all issues have a state other than `New` or `Confirmed`, the check passes. We try our best to approve all the reviews in Code Climate even if not technically required.
+We do Code Climate reviews only when issues are raised. Thus, an approval is not expected if no issues are raised.
+
+As of October 2017,  Code Climate does not require a formal approval to post a passing check. If all issues have a state other than `New` or `Confirmed`, the check passes. We try our best to approve all the reviews in Code Climate even if not technically required.
