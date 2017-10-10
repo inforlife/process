@@ -4,6 +4,8 @@ layout: page
 
 # [Code Climate](https://codeclimate.com)
 
+Code Climate is a service that incorporates fully-configurable test coverage and maintainability data throughout the development workflow, making quality improvement explicit, continuous, and ubiquitous.
+
 We use Code Climate for quality metrics and code coverage.
 
 ## Quality Metrics

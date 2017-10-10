@@ -4,7 +4,9 @@ layout: page
 
 # [GitHub](https://github.com/)
 
-The new GitHub Repository may be created following the [Github documentation](https://help.github.com/articles/create-a-repo/) or forking the [alpha repository](https://github.com/inforlife/alpha) which include samples for all the configuration files we need.
+GitHub is a web-based Git version control repository and Internet hosting service. It offers all of the distributed version control and source code management functionality of Git as well as adding its own features. It provides access control and several collaboration features such as bug tracking, feature requests, task management, and wikis for every project.
+
+The GitHub Repository we create at the begin of each project may be created following the [Github documentation](https://help.github.com/articles/create-a-repo/) or forking the [alpha repository](https://github.com/inforlife/alpha) which include samples for all the configuration files we need.
 
 ## Collaborators
 
@@ -59,7 +61,7 @@ The status checks currently in place are
 - codecov/project [Required]
 - continuous-integration/codeship or ci/circleci [Required]
 - codecov/patch
-- codeclimate/coverage [CHECK NAME]
+- codeclimate/coverage
 
 With our setup, checks marked as `required` must `pass` in order to be able to merge an issue branch into `master`.
 

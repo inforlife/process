@@ -4,6 +4,8 @@ layout: page
 
 # [CodeShip Pro](http://codeship.com/features/pro)
 
+CodeShip is a hosted continuous integration and delivery system.
+
 To integrate the GitHub Repository with CodeShip Pro, the following steps are executed.
 
 - We add a Dockerfile to the repository.

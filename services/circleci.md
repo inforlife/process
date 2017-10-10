@@ -4,6 +4,8 @@ layout: page
 
 # [CircleCI](https://circleci.com/) *deprecated*
 
+CircleCI is a hosted continuous integration and delivery system.
+
 To integrate the GitHub Repository with CircleCI, the following steps are executed.
 
 - We add the `circle.yml` (for CircleCI 1.0  *deprecated*) or `.circleci/config.yml`(for CircleCI 2.0) configuration file to the repository.
