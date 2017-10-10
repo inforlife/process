@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Project Setup"
+title:  "Setup"
 ---
 
 When a new project begins, a new [GitHub](https://inforlife.github.io/process/services/github.html) Repository, named after the project, is created.

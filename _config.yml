@@ -39,8 +39,8 @@ navigation:
 - text: Overview
   url: overview.html
   internal: true
-- text: Project Setup
-  url: project-setup.html
+- text: Setup
+  url: setup.html
   internal: true
 - text: Issues
   url: issues.html
@@ -51,8 +51,8 @@ navigation:
 - text: Release
   url: release.html
   internal: true
-- text: Continuous Integration
-  url: ci.html
+- text: Deployment
+  url: deployment.html
   internal: true
 #- text: DOCter Repo
 #  url: https://github.com/cfpb/DOCter
