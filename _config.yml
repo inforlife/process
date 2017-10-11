@@ -57,6 +57,9 @@ navigation:
 - text: Operations
   url: operations.html
   internal: true
+- text: Roles
+  url: roles.html
+  internal: true
 #- text: DOCter Repo
 #  url: https://github.com/cfpb/DOCter
 #  internal: false

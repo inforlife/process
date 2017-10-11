@@ -9,6 +9,8 @@ Keeping the issues directly on GitHub, it makes easy to link them to the branch 
 
 Every collaborator of the project who wishes to add a new issue creates a new GitHub Issue where he describes what he would like to be implemented or the error he has found. Once done, the collaborator assigns the Issue to a development team member.
 
+Since to ensure we have developed what needed features and fixes have to be accepted before being deployed, we don't open Issues for other people.
+
 The team member reviews (alone or with other members) the issue in order to gather any missing information and, if needed, to standardize it.
 
 We have divided GitHub Issues into the five categories below.
