@@ -54,6 +54,9 @@ navigation:
 - text: Deployment
   url: deployment.html
   internal: true
+- text: Operations
+  url: operations.html
+  internal: true
 #- text: DOCter Repo
 #  url: https://github.com/cfpb/DOCter
 #  internal: false

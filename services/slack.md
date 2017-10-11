@@ -16,6 +16,7 @@ We have created a dedicated Slack channel for each service we use. We currently 
 - docker-cloud *deprecated*, where the state of connection between Docker Cloud and the Dockyard node is updated.
 - heroku, where the outcome of the deployment to [Heroku](https://www.heroku.com/) is updated.
 - papertrail, where the confirmations of application deployment are posted.
-- rollbar, where the errors raised by applications is production are posted.
+- rollbar, where the errors raised by applications in production are posted.
+- updown, where the downtimes of internet-accessible applications in production are posted.
 
 All the messages are automatically posted by the respective services once a specific event happens.
