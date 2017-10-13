@@ -60,6 +60,9 @@ navigation:
 - text: Roles
   url: roles.html
   internal: true
+- text: Comparison with GAMP
+  url: gamp-comparison.html
+  internal: true
 #- text: DOCter Repo
 #  url: https://github.com/cfpb/DOCter
 #  internal: false
