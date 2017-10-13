@@ -5,10 +5,13 @@ title:  "Test-Driven Development"
 
 We use Test-Driven Development as development methodology. TDD is, according to [TestDrivenDevelopment by Martin Fowler](https://martinfowler.com/bliki/TestDrivenDevelopment.html),
 
-> Test-Driven Development is a technique for building software that guides software development by writing tests. [...] In essence, you follow three simple steps repeatedly:
- Write a test for the next bit of functionality you want to add.
- Write the functional code until the test passes.
- Refactor both new and old code to make it well structured. You continue cycling through these three steps, one test at a time, building up the functionality of the system.
+{% highlight text %}
+Test-Driven Development is a technique for building software that guides software development by writing tests. [...] In essence, you follow three simple steps repeatedly:
+
+ - Write a test for the next bit of functionality you want to add.
+ - Write the functional code until the test passes.
+ - Refactor both new and old code to make it well structured. You continue cycling through these three steps, one test at a time, building up the functionality of the system.
+{% endhighlight %}
 
 We write our tests as specifications using [RSpec](http://rspec.info/), a tool which allows us to automatically run the test suite through a command line interface.
 
@@ -58,7 +61,7 @@ RSpec.describe User, type: :model do
     end
   end
 end
-{% highlight %}
+{% endhighlight %}
 
 The specification describes the invalidity of, and therefore the impossibility to save into the database, a user without a full name.
 
