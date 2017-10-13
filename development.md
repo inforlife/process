@@ -9,7 +9,7 @@ If he finds one, he moves it to the `In progress` column.
 
 If no Issues are currently assigned to the team member, he picks up, from the 'Backlog' column, the one above all others (the currently most relevant), assigns it to him and, moves it to the `In progress` column.
 
-At this point, the team member creates locally an 'issue' branch named like the issue title and implements one after the other all the *Conditions of satisfaction* listed in the Issue.
+At this point, the team member creates locally an 'issue' branch named like the issue title and implements one after the other all the *Conditions of satisfaction* listed in the Issue using [Test-Driven Development](https://inforlife.github.io/process/test-driven-development.html).
 
 The new code is pushed regularly to GitHub (at least one per day).
 
