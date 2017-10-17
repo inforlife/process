@@ -13,7 +13,7 @@ The GitHub Repository we create at the begin of each project may be created foll
 The collaborators added to each repository are
 
 - All members of the development team
-- [InfoRBot](https://github.com/inforbot).
+- [InfoRBot](https://github.com/inforbot)
 - At least one issue approver [1](#notes)(a member of the QA unit)
 
 Other personnel is added upon their request. We welcome all the users as collaborators.

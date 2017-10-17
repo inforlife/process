@@ -6,7 +6,7 @@ title:  "Qualification"
 Our ultimate goal is to
 
 {% highlight text %}
-Provide superior quality software that meets or exceed user requirements and expectations.
+Provide superior quality software that meets or exceeds user requirements and expectations.
 {% endhighlight %}
 
 Therefore, the process we put in place must be capable of consistently producing software with the level of quality we aim for. The best way to achieve so it is to build quality into the process itself. To accomplish that, we follow the principles below.

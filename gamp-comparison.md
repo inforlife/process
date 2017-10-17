@@ -13,7 +13,7 @@ To have a comprehensive overview of the quality of our process, we have compared
 
 ![v-model](assets/images/v-model.png){:width="100%"}
 
-Instead of managing user requirements in a single document as the GAMP framework suggests, we found more convenient managing them individually as[GitHub Issues](https://guides.github.com/features/issues/). Having the requirements directly in GitHub allows us to have full [traceability](https://inforlife.github.io/process/traceability.html) from definition to release, something impossible to achieve when requirements are managed on paper. Furthermore, since the requirements are online, we have access to them regardless our location. This simplifies their definition, approval, and acceptance.  
+Instead of managing user requirements in a single document as the GAMP framework suggests, we found more convenient managing them individually as [GitHub Issues](https://guides.github.com/features/issues/). Having the requirements directly in GitHub allows us to have full [traceability](https://inforlife.github.io/process/traceability.html) from definition to release, something impossible to achieve when requirements are managed on paper. Furthermore, since the requirements are online, we have access to them regardless our location. This simplifies their definition, approval, and acceptance.  
 
 Instead of following GAMP's approach, and defining a series of documents (functional, design, module specifications) after the requirements have been collected (and approved), implementing the requirements, and then verifying the correctness of each level of specification within a dedicated collection of tests, we specify the behavior our applications should have and test it while developing them directly in code.
 
