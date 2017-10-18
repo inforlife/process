@@ -15,7 +15,7 @@ The new code is pushed regularly to GitHub (at least one per day).
 
 After the first push, the team member opens in GitHub a [Pull request](https://help.github.com/articles/using-pull-requests) to merge the issue branch into `master`. By default, the comment field is pre-populated with `This PR refers to issue #`, the branch owner adds the number of the Issue, so we can trace the Issue within the code.
 
-After every push to GitHub, the code goes through [CI](https://inforlife.github.io/process/ci.html), to ensure all the tests pass, and through Code Climate which looks for and reports quality issues.
+After every push to GitHub, the code goes through [CI](https://inforlife.github.io/process/ci.html)[1](#notes), to ensure all the tests pass, and through Code Climate which looks for and reports quality issues.
 
 When the issue has been implemented in all its parts (all conditions of satisfaction are met), the code must be [reviewed](https://inforlife.github.io/process/code-review.html) before it can be merged into `master`. Thus, the branch owner, after making sure all the required checks pass, selects a reviewer (another member of the team).
 
@@ -32,3 +32,6 @@ If the reviewer did not require changes, the branch owner can merge the branch a
 At this point, the team member who implemented the issue accesses the `Development` Project and moves the Issue to the 'Completed' column.
 
 **We believe that code review is the single biggest thing we can do to improve the quality of the code we produce and, as very positive side effect, it also improves team members' skills.**
+
+#####Notes:
+1. This does not apply to `legacy` application which aren't developed using TDD.
