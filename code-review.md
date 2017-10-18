@@ -14,6 +14,8 @@ Once completed, the reviewer assigns a status to the review. The possible status
 
 It is highly recommended (but not required) to add a Review summary before submitting the review.
 
+If during the review, the reviewer decides to make any changes to the code, instead of giving a status to the review, he assigns back the review to the branch owner for approval.
+
 **Code review may be skipped for issues developed through [pair programming](https://en.wikipedia.org/wiki/Pair_programming).**
 
 ## Code Climate
