@@ -13,7 +13,7 @@ At this point, the team member creates locally an 'issue' branch named like the 
 
 The new code is pushed regularly to GitHub (at least one per day).
 
-After the first push, the team member opens in GitHub a [Pull request](https://help.github.com/articles/using-pull-requests) to merge the issue branch into `master`.
+After the first push, the team member opens in GitHub a [Pull request](https://help.github.com/articles/using-pull-requests) to merge the issue branch into `master`. By default, the comment field is pre-populated with `This PR refers to issue #`, the branch owner adds the number of the Issue, so we can trace the Issue within the code.
 
 After every push to GitHub, the code goes through [CI](https://inforlife.github.io/process/ci.html), to ensure all the tests pass, and through Code Climate which looks for and reports quality issues.
 
@@ -22,8 +22,6 @@ When the issue has been implemented in all its parts (all conditions of satisfac
 The branch owner is allowed to require a code review when Code Climate fails because of "false-positives", that are issues that the branch owner retains irrelevant. All relevant violations raised by Code Climate are addressed before starting the code review.
 
 As soon as possible, the reviewer goes through the Pull request.
-
-If during the review, the reviewer decides to make any changes to the code, instead of giving a status to the review, he assigns back the review to the branch owner for approval.
 
 Once the review is completed, branch owner and reviewer meet (physically or remotely) and complete the review by going together through any relevant comment.
 
