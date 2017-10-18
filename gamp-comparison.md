@@ -23,6 +23,6 @@ We usually define [two types of specifications, feature and class specifications
 Furthermore, specifications written on paper has the risk to become outdated and not reflect the current system. Our specifications are easy to update, since they are within the code base, and cannot become obsolete without we notice it right away.
 
 Finally, GAMP recommends executing some requirements testing to verify the correctness of the user requirements specification.
-Since we have already verified the application does what the user requirements say on our feature specifications, as the last step we wish to make sure we correctly understood what the person who opened the issue asked for. This confirms for us not only we write the code right but also we write the right code.
+Since we have already verified the application does what the user requirements say on our feature specifications, as the last step we wish to make sure we correctly understood [what the person who opened the issue asked for](https://inforlife.github.io/process/iterations.html#user-acceptance). This confirms for us not only we write the code right but also we write the right code.
 
 To conclude, we think an application developed with our process is at least good as one which followed the guidelines indicated by GAMP.
