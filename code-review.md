@@ -6,6 +6,8 @@ title:  "Code Review"
 Once a [code review](https://help.github.com/articles/about-pull-request-reviews/) is assigned to a team member, the reviewer accesses the Pull request on GitHub and starts the review going through the code.
 Whenever something doesn't seem fine and it may be improved, the reviewer adds a comment so it can be discussed with the branch owner later on.
 
+During a review, the reviewer doesn't make any changes to the code.
+
 Once completed, the reviewer assigns a status to the review. The possible statuses are
 
 - Comment: Submit general feedback without explicitly approving the changes or requesting additional changes.
@@ -13,8 +15,6 @@ Once completed, the reviewer assigns a status to the review. The possible status
 - Request changes: Submit feedback that must be addressed before the Pull request can be merged.
 
 It is highly recommended (but not required) to add a Review summary before submitting the review.
-
-If during the review, the reviewer decides to make any changes to the code, instead of giving a status to the review, he assigns back the review to the branch owner for approval.
 
 **Code review may be skipped for issues developed through [pair programming](https://en.wikipedia.org/wiki/Pair_programming).**
 
