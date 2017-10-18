@@ -25,7 +25,9 @@ As soon as possible, the reviewer goes through the Pull request.
 
 Once the review is completed, branch owner and reviewer meet (physically or remotely) and complete the review by going together through any relevant comment.
 
-If the code requires any change, the branch owner updates it. Once the reviewer approves the updated code, the branch owner can merge the branch into `master` and delete it. Otherwise, the merge can be done as soon as the review is completed by the branch owner.
+If the code requires any change, the branch owner updates it. Once the reviewer approves the updated code, the branch owner can merge the branch into `master` and delete it.
+
+If the reviewer did not require changes, the branch owner can merge the branch as soon as the review is completed.
 
 At this point, the team member who implemented the issue accesses the `Development` Project and moves the Issue to the 'Completed' column.
 
