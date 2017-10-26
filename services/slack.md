@@ -13,7 +13,7 @@ We have created a dedicated Slack channel for each service we use. We currently 
 - circleci, where the outcome of builts on CircleCI are posted.
 - codeship, where the outcome of builts on CodeShip are posted.
 - devops, where conversations with InforBot take place.
-- docker-cloud *deprecated*, where the state of connection between Docker Cloud and the Dockyard node is updated.
+- <span class="alert warning">deprecated</span> docker-cloud, where the state of connection between Docker Cloud and the Dockyard node is updated.
 - heroku, where the outcome of the deployment to [Heroku](https://www.heroku.com/) is updated.
 - papertrail, where the confirmations of application deployment are posted.
 - rollbar, where the errors raised by applications in production are posted.

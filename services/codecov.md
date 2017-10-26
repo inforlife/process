@@ -12,4 +12,4 @@ The integration with GitHub is automatically done by GitHub itself since CodeCov
 
 We refer to the [CodeShip documentation](https://documentation.codeship.com/general/integrations/codecov/) to integrate CodeShip with CodeCov.
 
-For CircleCI, we add the `CODECOV_TOKEN` to the project via CircleCI UI. *deprecated*
+<span class="alert warning">deprecated</span> For CircleCI, we add the `CODECOV_TOKEN` to the project via CircleCI UI.

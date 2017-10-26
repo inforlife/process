@@ -5,13 +5,14 @@ title:  "Test-Driven Development"
 
 We use Test-Driven Development as development methodology. TDD is, according to [TestDrivenDevelopment by Martin Fowler](https://martinfowler.com/bliki/TestDrivenDevelopment.html),
 
-{% highlight text %}
+<div class="alert dark">
 Test-Driven Development is a technique for building software that guides software development by writing tests. [...] In essence, you follow three simple steps repeatedly:
-
- - Write a test for the next bit of functionality you want to add.
- - Write the functional code until the test passes.
- - Refactor both new and old code to make it well structured. You continue cycling through these three steps, one test at a time, building up the functionality of the system.
-{% endhighlight %}
+  <ul>
+     <li>Write a test for the next bit of functionality you want to add.</li>
+     <li>Write the functional code until the test passes.</li>
+     <li>Refactor both new and old code to make it well structured. You continue cycling through these three steps, one test at a time, building up the functionality of the system.</li>
+   </ul>
+</div>
 
 We write our tests as specifications using [RSpec](http://rspec.info/), a tool which allows us to automatically run the test suite through a command line interface.
 

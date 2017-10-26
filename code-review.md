@@ -16,7 +16,7 @@ Once completed, the reviewer assigns a status to the review. The possible status
 
 It is highly recommended (but not required) to add a Review summary before submitting the review.
 
-**Code review may be skipped for issues developed through [pair programming](https://en.wikipedia.org/wiki/Pair_programming).**
+<div class="alert info">Code review may be skipped for issues developed through <a href="https://en.wikipedia.org/wiki/Pair_programming">pair programming</a>.</div>
 
 ## Code Climate
 If Code Climate finds some violations on the code added by the pull request, it returns a `fail` check and the Pull request cannot be merged.

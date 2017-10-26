@@ -24,8 +24,8 @@ We have divided GitHub Issues into the five categories below.
 
 According to its category, a GitHub Issue needs specific information to be considered complete and so ready to be implemented.
 
-**The only updates allowed without being described in an Issue are "dependency upgrades" such are upgrading the version of the Ruby programming language or that of a Ruby Gem used for the project.
-Any other change in the source code must become from an approved GitHub Issue.**
+<div class="alert info">The only updates allowed without being described in an Issue are "dependency upgrades" such are upgrading the version of the Ruby programming language or that of a Ruby Gem used for the project.
+Any other change in the source code must become from an approved GitHub Issue.</div>
 
 ## Approval
 

@@ -31,7 +31,7 @@ If the reviewer did not require changes, the branch owner can merge the branch a
 
 At this point, the team member who implemented the issue accesses the `Development` Project and moves the Issue to the 'Completed' column.
 
-**We believe that code review is the single biggest thing we can do to improve the quality of the code we produce and, as very positive side effect, it also improves team members' skills.**
+<div class="alert info">We believe that code review is the single biggest thing we can do to improve the quality of the code we produce and, as very positive side effect, it also improves team members' skills.</div>
 
 #####Notes:
 1. This does not apply to `legacy` application which aren't developed using TDD.

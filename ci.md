@@ -9,7 +9,9 @@ Thanks to the features offered by GitHub, every time new code is pushed to Githu
 
 Due to the standard protection rules, we define on each repository, any Pull request may be merged **only** if all CI build passes.
 
-**This guarantees that it is not possible for code with failing specifications to move from a feature branch to master and eventually to production**.
+
+<div class="alert info">This guarantees that it is not possible for code with failing specifications to move from a feature branch to master and eventually to production.</div>
+
 
 All the CI services we use allow us to configure our build process through configuration files that are checked in as part of the repository itself. In this way, the configuration is reviewed like all the other code and it is easy to update those actions when necessary. Moreover, it is always clear which actions are performed during the build.
 

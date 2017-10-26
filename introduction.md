@@ -15,9 +15,7 @@ Because of all the downsides, during winter 2001 several prominent software deve
 
 The first of the twelve principles listed in the manifesto states
 
-{% highlight text %}
-Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.
-{% endhighlight %}
+<div class="alert dark">Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.</div>
 
 The Software Development Team at InfoRLife believes the same and it is convinced that, even if waterfall is among the life sciences industry still the de facto[1](#notes) standard, the best way to achieve so is through an iterative process where users are involved throughout the development process and developers follow Test Driven Development (TDD) as the methodology to guide the software design.
 
