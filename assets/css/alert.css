@@ -1,0 +1,28 @@
+.alert {
+  position: relative;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.info {
+  font-size: 1em;
+  color: #0c5460;
+  background-color: #d1ecf1;
+  border-color: #bee5eb;
+}
+
+.warning {
+  font-size: 0.75em;
+  color: #856404;
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+  text-transform: uppercase;
+}
+
+.dark {
+  font-size: 1em;
+  color: #1b1e21;
+  background-color: #f1f2f2;
+  border-color: #c6c8ca;
+}

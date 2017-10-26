@@ -3,44 +3,36 @@ layout: page
 title:  "Release"
 ---
 
-In the recent past, a lot of effort has been put into automating everything that must happen between taking the source code of a piece of software from GitHub and making the software running in production.
+Once all the Issues associated with a Milestone have been closed, a new [GitHub Release](https://help.github.com/articles/about-releases/) can be drafted. Releases are the mechanism we use for packing our applications for deployment.
 
-Even if the current process may be further automated with the adoption of [continuous delivery](https://en.wikipedia.org/wiki/Continuous_delivery) techniques, thanks to the integration between GitHub and [Docker Cloud](https://www.docker.com/products/docker-cloud), we have reached a level of automation that allows us to create a [new release on GitHub](https://help.github.com/articles/about-releases/) and to have that code running on production in less than half hour without any human intervention.
+The release process has been fully automated with the use of [InfoRBot](https://github.com/inforlife/inforbot), an application we have internally developed.
 
-**This level of automation first and foremost guarantees that every deployment is done in a predictable way eliminating any possible error or omission due to humans and the activities needed to qualify a new release can be reduced to few simple checks.**
+InfoRBot is a chatbot hosted on [Heroku](https://www.heroku.com/) and added to the `devops` channel of our [Slack](https://inforlife.github.io/process/services/slack.html) workspace. It is currently used only for drafting new Releases but we hope to extend its capabilities in the future.
 
-As a side effect, since qualification takes now very little time, we can deploy more often providing valuable software to users more quickly.
+To draft a new release, a team member posts a message to the `devops` channel of our Slack workspace with the following structure
 
-## Steps
+`inforbot release REPOSITORY milestone MILESTONE`
 
-Once a feature (or a set of features) is 'done', it is time to deploy it to production.
+Upon posting this message, InfoRBot runs the following checks
 
-- A team member (usually the one that have closed the last pull request) drafts a new release on GitHub defining
-  - Tag version[1](#notes). - an up to three number code that identifies the release.
-  - Release title - a brief description of the release.
-  - Release description - this must include the type of release (upgrade or update) and the change log.
+- The Repository REPOSITORY exists.
+- The Milestone MILESTONE exists.
+- All the Issues associated with the Milestone MILESTONE have been closed.
+- A Release having `tag version` equal to MILESTONE doesn't exist already.
+- The last CI build for the `master` branch (the one which will be released) of the Repository REPOSITORY was successful.
 
-- As soon as the new release is created the request to build a new Docker image is automatically sent to [Docker Hub](https://www.docker.com/products/docker-hub), the part of Docker Cloud responsible for managing Docker images.
+If all the checks are successful, it drafts, from the `master` branch, the MILESTONE release and closes the Milestone MILESTONE. Otherwise, it posts back to the `devops` channel an informative message.
 
-- Docker Hub, once received the request, pulls the release from GitHub and, according to the Dockerfile[2](#notes), builds and stores the two identical images[3](#notes) with different tags.
-  - One with the same tag of the release in GitHub for future reference.
-  - One with *latest* as tag for automatic deployment.
+## Image build
 
-- As soon as the new *latest* image is created Docker Cloud picks it up and automatically
-  - Pushes it to production.
-  - Stops the now outdated running container.
-  - Starts an identical one using the newly created image.
+As soon as the new Release is drafted, [Docker Hub](https://inforlife.github.io/process/services/dockerhub.html) pulls the Release from GitHub and, according to the Dockerfile[1](#notes) it finds inside, builds and stores the two identical images we have configured it to create.
 
-As part of the booting process, all applications log the number of the release that is running to [Papertrail](https://papertrailapp.com/), the log management service we currently use.
+Once the images have been built, we are ready for [deployment](https://inforlife.github.io/process/services/deployment.html).
 
-The successful completion of a new release is notified to the development team with a message posted to the `papertrail` channel in [Slack](https://slack.com/), the service we are currently using to receive all feedback related to the internally developed applications.
+Even if the current process may be further improved with the adoption of automated deployment, we have reached a level of automation that allows us to create a new GitHub Release and to have that code ready for production in less than half hour without any human intervention.
 
-#### First deployment
-
-Before an application may be deployed to production for the first time, few steps are required. They are described in the [project setup](https://inforlife.github.io/process/setup.html) page.
+This level of automation first and foremost guarantees that every release is done in a predictable way eliminating any possible error or omission due to humans. Therefore, the activities needed to qualify the drafting of a new release (not a deployment) have become superfluous and can be skipped.
 
 
 #####Notes:
-1. Tags are created using [semantic versioning](http://semver.org/).
-2. A Dockerfile is a file that contains all the instructions necessary to build the Docker Image, these instructions may be to pull a third-party software from a registry or to execute a specific command. For more information refer to the [Docker documentation](https://docs.docker.com/engine/reference/builder/).
-3. A Docker image is an inert, immutable file that can be executed as it was a physical computer.
+1. A Dockerfile is a file that contains all the instructions necessary to build the Docker Image, these instructions may be to pull a third-party software from a registry or to execute a specific command. For more information refer to the [Docker documentation](https://docs.docker.com/engine/reference/builder/).
