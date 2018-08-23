@@ -18,6 +18,7 @@ Upon posting this message, InfoRBot runs the following checks
 - The Repository REPOSITORY exists.
 - The Milestone MILESTONE exists.
 - All the Issues associated with the Milestone MILESTONE have been closed.
+- All the Issues associated with the Milestone MILESTONE have the required labels (`Approved`/`Confirmed` and `Accepted`).
 - A Release having `tag version` equal to MILESTONE doesn't exist already.
 - The last CI build for the `master` branch (the one which will be released) of the Repository REPOSITORY was successful.
 
