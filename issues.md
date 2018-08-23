@@ -25,7 +25,7 @@ We have divided GitHub Issues into the five categories below.
 According to its category, a GitHub Issue needs specific information to be considered complete and so ready to be implemented.
 
 <div class="alert info">The only updates allowed without being described in an Issue are "dependency upgrades" such are upgrading the version of the Ruby programming language or that of a Ruby Gem used for the project.
-Any other change in the source code must become from an approved GitHub Issue.</div>
+Any other change in the source code must become from an approved/confirmed GitHub Issue.</div>
 
 ## Approval
 
@@ -35,4 +35,4 @@ The approver then reviews the issue and approves (or rejects) its implementation
 
 We require an approval from QA only for `features` and `enhancements`.
 `Payoffs` and `others` are approved by the development team.
-`Fixes` once confirmed are automatically approved.
+`Fixes` are confirmed by a team of the development team.
