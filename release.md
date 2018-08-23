@@ -33,6 +33,9 @@ Even if the current process may be further improved with the adoption of automat
 
 This level of automation first and foremost guarantees that every release is done in a predictable way eliminating any possible error or omission due to humans. Therefore, the activities needed to qualify the drafting of a new release (not a deployment) have become superfluous and can be skipped.
 
+## Non-production releases
+
+From time to time it may be necessary to draft a non-production (beta) release. This may be necessary to test integration with other applications or to allow final users to verify if new features have been implemented as they intended. In this case, the release is drafted manually by a team member. Beta releases are tagged as YYYY.N.bX where YYYY is the year of the release, N is the release progressive number, and  X is the beta progressive number. For instance, 2018.1.b2 identifies the second beta of the first release drafted in 2018. In addition, the release is marked as a pre-release so, in GitHub, it is visible the release is non-production ready.   
 
 #####Notes:
 1. A Dockerfile is a file that contains all the instructions necessary to build the Docker Image, these instructions may be to pull a third-party software from a registry or to execute a specific command. For more information refer to the [Docker documentation](https://docs.docker.com/engine/reference/builder/).
