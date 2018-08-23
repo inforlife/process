@@ -25,9 +25,9 @@ If all the checks are successful, it drafts, from the `master` branch, the MILES
 
 ## Image build
 
-As soon as the new Release is drafted, [Docker Hub](https://inforlife.github.io/process/services/dockerhub.html) pulls the Release from GitHub and, according to the Dockerfile[1](#notes) it finds inside, builds and stores the two identical images we have configured it to create.
+As soon as the new Release is drafted, [Docker Hub](https://inforlife.github.io/process/services/dockerhub.html) pulls the Release from GitHub and, according to the Dockerfile[1](#notes) it finds inside, builds and stores an image tagged with the same `tag` assigned to the Release (i.e. 2018.1).
 
-Once the images have been built, we are ready for [deployment](https://inforlife.github.io/process/services/deployment.html).
+Once the image has been built, we are ready for [deployment](https://inforlife.github.io/process/services/deployment.html).
 
 Even if the current process may be further improved with the adoption of automated deployment, we have reached a level of automation that allows us to create a new GitHub Release and to have that code ready for production in less than half hour without any human intervention.
 
