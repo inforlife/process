@@ -23,6 +23,8 @@ Upon posting this message, InfoRBot runs the following checks
 
 If all the checks are successful, it drafts, from the `master` branch, the MILESTONE release and closes the Milestone MILESTONE. Otherwise, it posts back to the `devops` channel an informative message.
 
+Once the release has been drafted, InfoRBot publishes the updated documentation (the content of the `\doc` directory) to the documentation site.
+
 ## Image build
 
 As soon as the new Release is drafted, [Docker Hub](https://inforlife.github.io/process/services/dockerhub.html) pulls the Release from GitHub and, according to the Dockerfile[1](#notes) it finds inside, builds and stores the two identical images we have configured it to create.

@@ -40,5 +40,5 @@ Since our test and production environment are virtually identical, we may assume
 
 
 #####Notes:
-1. All the aspects related to the usage of the applications are included as source code and checked into the project repository. They are published as documentation website available at https://inforlife.github.io/REPOSITORY.
+1. All the aspects related to the usage of the applications are included as source code and checked into the project repository. They are published as documentation website available at https://inforlife.github.io/doc-REPOSITORY.
 2. The application stack is the set of all pieces of software required to run the entire application, from the operating system to the code we wrote.
