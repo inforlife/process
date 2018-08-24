@@ -23,11 +23,11 @@ When completed, the issue [must be reviewed](https://inforlife.github.io/process
 
 The reviewer looks through the Pull request and, according to the outcome of the review, approves it or requests changes.
 
-Once the Pull request is approved, the branch owner closes it by merging the branch into `master` and marks the issue as **completed**.
+Once the Pull Request is approved, the branch owner closes it by merging the branch into `master`. Then, she closes the Issue and moves the relative card to the 'Completed' column in the `Development` Project.
 
-All **completed** Issues are periodically reviewed by the issue owners who [accepts them or asks for modifications](https://inforlife.github.io/process/iterations.html#user-acceptance).
+Periodically, completed Issues are shown to their owners in demo sessions at the end of which, they [accept them or ask for modifications](https://inforlife.github.io/process/iterations.html#user-acceptance).
 
-Once an Issue is accepted, a team member marks the issue as **done** and closes it.
+Once an Issue is accepted, a team member moves the relative card to the 'Done' column in the `Development` Project.
 
 When all the issues included in the milestone have been closed, we [release](https://inforlife.github.io/process/release.html) them via a GitHub Release and the code is deployed into production using Docker as the underlying platform.
 

@@ -35,7 +35,6 @@ To do so, alongside the creation of the project repository, we create a second r
 
 
 #####Notes:
-
 1. The `inforlife` account is managed by the Development Team Leader.
 2. For more details regarding Continuous Integration may be found at the [CI page](https://inforlife.github.io/process/ci.html)
 3. The Diff Coverage threshold can currently defined only via the Code Climate UI. We will add it to source control as soon as it will be possible to define it in a configuration file.
