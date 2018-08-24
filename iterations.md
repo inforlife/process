@@ -29,7 +29,7 @@ At this point, the [development process](https://inforlife.github.io/process/dev
 ## User Acceptance
 During an iteration, the development team periodically (usually on a weekly basis) demonstrates all the issues already completed and not considered 'done' yet.
 
- At the demo participate all the owners of issues planned to be demonstrated (they are notified in advance by the development team).
+At the demo participate all the owners of issues planned to be demonstrated (they are notified in advance by the development team).
 
 Any other collaborator or user of the application is welcome to join the demo session.
 

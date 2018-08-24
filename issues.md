@@ -9,10 +9,11 @@ Keeping the issues directly on GitHub, it makes easy to link them to the branch 
 
 Every collaborator of the project who wishes to add a new issue creates a new GitHub Issue where he describes what he would like to be implemented or the error he has found. Once done, the collaborator assigns the Issue to a development team member.
 
-
-To ensure we have developed what needed, features and fixes have to be accepted before they can be considered `done` and ready for deployment. This means the person which needs a feature or has found a bug needs to be clearly identified. Thus, we don't open Issues for other people.
+To ensure we have developed what needed, `features` and `fixes` have to be accepted before they can be considered `done` and ready for deployment. This means the person needing a feature or founding a bug needs to be clearly identified. Thus, we encourage all users to actively collaborate on the projects and open Issues by themselves.
 
 The team member reviews (alone or with other members) the issue in order to gather any missing information and, if needed, to standardize it.
+
+When that is not possible, we open Issues on their behalf. In this case, once drafted, the Issue is assigned to the original petitioner who confirms the correctness of the Issue by adding the `Endorsed` label. If the Issue is not correct, petitioner and a team member collaborate to clarify any incorrect point. Then, the Issue is endorsed.
 
 We have divided GitHub Issues into the five categories below.
 
@@ -25,7 +26,7 @@ We have divided GitHub Issues into the five categories below.
 According to its category, a GitHub Issue needs specific information to be considered complete and so ready to be implemented.
 
 <div class="alert info">The only updates allowed without being described in an Issue are "dependency upgrades" such are upgrading the version of the Ruby programming language or that of a Ruby Gem used for the project.
-Any other change in the source code must become from an approved GitHub Issue.</div>
+Any other change in the source code must become from an approved/confirmed GitHub Issue.</div>
 
 ## Approval
 
@@ -35,4 +36,4 @@ The approver then reviews the issue and approves (or rejects) its implementation
 
 We require an approval from QA only for `features` and `enhancements`.
 `Payoffs` and `others` are approved by the development team.
-`Fixes` once confirmed are automatically approved.
+`Fixes` are confirmed by a team of the development team.
