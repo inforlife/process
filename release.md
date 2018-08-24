@@ -18,7 +18,7 @@ Upon posting this message, InfoRBot runs the following checks
 - The Repository REPOSITORY exists.
 - The Milestone MILESTONE exists.
 - All the Issues associated with the Milestone MILESTONE have been closed.
-- All the Issues associated with the Milestone MILESTONE have the required labels (`Approved`/`Confirmed` and `Accepted`).
+- All the Issues associated with the Milestone MILESTONE have the required Labels (`Approved`/`Confirmed` and `Accepted`).
 - A Release having `tag version` equal to MILESTONE doesn't exist already.
 - The last CI build for the `master` branch (the one which will be released) of the Repository REPOSITORY was successful.
 
@@ -26,11 +26,13 @@ If all the checks are successful, it drafts, from the `master` branch, the MILES
 
 Once the release has been drafted, InfoRBot publishes the updated documentation (the content of the `\doc` directory) to the documentation site.
 
+We then [archive](https://blog.github.com/2018-06-28-archive-project-board-cards/) all the done issues.
+
 ## Image build
 
 As soon as the new Release is drafted, [Docker Hub](https://inforlife.github.io/process/services/dockerhub.html) pulls the Release from GitHub and, according to the Dockerfile[1](#notes) it finds inside, builds and stores an image tagged with the same `tag` assigned to the Release (i.e. 2018.1).
 
-Once the image has been built, we are ready for [deployment](https://inforlife.github.io/process/services/deployment.html).
+Once the image is built, we receive a notification in a dedicated [Slack](https://inforlife.github.io/process/services/slack.html) channel and we are ready for [deployment](https://inforlife.github.io/process/services/deployment.html).
 
 Even if the current process may be further improved with the adoption of automated deployment, we have reached a level of automation that allows us to create a new GitHub Release and to have that code ready for production in less than half hour without any human intervention.
 
