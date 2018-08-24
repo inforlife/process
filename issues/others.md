@@ -8,12 +8,12 @@ Others are those issues that don't fall into one of the predefined categories. T
 ## Name
 Few words that identify the issue.
 
-An example of name is `Add image build to CI`.
+An example of a name is `Add image build to CI`.
 
 ## Description
 A summary of the concerns with the current design.
 
-An example of description is
+An example of a description is
 
 {% highlight yaml %}
 To standardize the internal development process, the build of Docker image should be added to CI runs.

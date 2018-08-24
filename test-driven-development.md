@@ -24,7 +24,7 @@ We usually write two types of specifications, feature and class specifications.
 
 Feature specifications are end-to-end specifications written from the user perspective which, when executed, exercise the entire application stack. This type of specifications is written only for application with a user interface. For applications which don't require user interaction, we write a different kind of end-to-end specifications.
 
-An example of feature specification is
+An example of a feature specification is
 
 {% highlight ruby %}
 RSpec.feature "Log into the application", type: :feature do
@@ -50,7 +50,7 @@ We normally write a single specification (with multiple scenarios) for each [iss
 
 Class specifications (also called unit tests) are lower-level specifications which individually and independently verify the correctness of a single class.
 
-An example of class specification is
+An example of a class specification is
 
 {% highlight ruby %}
 RSpec.describe User, type: :model do
