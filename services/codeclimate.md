@@ -20,7 +20,7 @@ To setup quality metrics (static analysis), the following steps are executed.
 
 To setup code coverage, the following steps are executed.
 
-  - We add the `simpelcov`gem to the `test` and `ci` group.
+  - We add the `simplecov`gem to the `test` and `ci` group.
   - We require `simplecov` for the `ci` environment. We keep the gem in the `test` group so we can run code coverage locally if needed.
   - We load the `reporter ID` (CC_TEST_REPORTER_ID) via environment variables to the CI environment.
   - We install the Code Climate reporter to the Docker image we use to run our CI.
