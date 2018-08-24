@@ -59,7 +59,7 @@ The status checks currently in place are
 
 - codeclimate (code quality) [Required]
 - codeclimate/diff-coverage [Required]
-- codeclimate/total-coverage
+- codeclimate/total-coverage [Required]
 - continuous-integration/codeship or ci/circleci [Required]
 - codeclimate/coverage
 
