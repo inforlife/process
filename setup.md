@@ -22,7 +22,7 @@ The GitHub Repository is connected to [Code Climate](https://inforlife.github.io
 
 Code Climate receives from the CI service the report generated while running the entire test suite and posts the results to the GitHub Pull request.
 
-While aiming at 100% code coverage is, in theory, a good thing, in the real world is impracticable or requires more effort than providing benefits. Thus, we have enforced Diff Coverage [3](#notes) with a 90% threshold and Total Coverage. In this way we check both the test coverage of the new code in each pull request (Diff Coverage) and how each pull request impacts overall test coverage of the repository (Total Coverage). When Total Coverage decreases the check fails and Pull requests can't be merged into `master` until that overall coverage increases again.
+While aiming at 100% code coverage is, in theory, a good thing, in the real world is impracticable or requires more effort than providing benefits. Thus, we have enforced Diff Coverage [3](#notes) with a 90% threshold and Total Coverage. In this way we check both the test coverage of the new code in each pull request (Diff Coverage) and how each pull request impacts overall test coverage of the repository (Total Coverage). When Diff Coverage is under 90% and Total Coverage decreases the relative check fails and Pull requests can't be merged into `master` until that overall coverage increases again.
 
 Finally, the GitHub Repository is connected to [Snyk](https://inforlife.github.io/process/services/snyk.html) in order to find vulnerabilities in our code and its dependencies.
 
