@@ -19,9 +19,8 @@ The balance we have achieved between humans and machines guarantees each piece o
 - It passes an extensive set of automated tests which verify its correctness.
 - It conforms to our coding style.
 - Its design was approved by a team member.
+- All released issues were approved by our QA (or confirmed by the development team) and accepted by the users who requested them
 - [It was successfully packed](https://inforlife.github.io/process/release.html#image-build) with all the dependencies it requires to run properly.
-
-Soon we will also guarantee [all released issues were approved by our QA or development team and accepted by the users who requested them](https://github.com/inforlife/inforbot/issues/13).
 
 Thanks to the restrictions we have in place we can reduce the scope of qualification and, to qualify a new deployment, perform the simple checks below.
 
@@ -40,5 +39,5 @@ Since our test and production environment are virtually identical, we may assume
 
 
 #####Notes:
-1. All the aspects related to the usage of the applications are included as source code and checked into the project repository. They are published as documentation website available at https://inforlife.github.io/REPOSITORY.
+1. All the aspects related to the usage of the applications are included as source code and checked into the project repository. They are published as documentation website available at https://inforlife.github.io/doc-REPOSITORY.
 2. The application stack is the set of all pieces of software required to run the entire application, from the operating system to the code we wrote.

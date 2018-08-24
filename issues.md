@@ -9,10 +9,11 @@ Keeping the issues directly on GitHub, it makes easy to link them to the branch 
 
 Every collaborator of the project who wishes to add a new issue creates a new GitHub Issue where he describes what he would like to be implemented or the error he has found. Once done, the collaborator assigns the Issue to a development team member.
 
-
-To ensure we have developed what needed, features and fixes have to be accepted before they can be considered `done` and ready for deployment. This means the person which needs a feature or has found a bug needs to be clearly identified. Thus, we don't open Issues for other people.
+To ensure we have developed what needed, `features` and `fixes` have to be accepted before they can be considered `done` and ready for deployment. This means the person needing a feature or founding a bug needs to be clearly identified. Thus, we encourage all users to actively collaborate on the projects and open Issues by themselves.
 
 The team member reviews (alone or with other members) the issue in order to gather any missing information and, if needed, to standardize it.
+
+When that is not possible, we open Issues on their behalf. In this case, once drafted, the Issue is assigned to the original petitioner who confirms the correctness of the Issue by adding the `Endorsed` label. If the Issue is not correct, petitioner and a team member collaborate to clarify any incorrect point. Then, the Issue is endorsed.
 
 We have divided GitHub Issues into the five categories below.
 

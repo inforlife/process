@@ -6,9 +6,9 @@ title:  "Setup"
 When a new project begins, a new [GitHub](https://inforlife.github.io/process/services/github.html) Repository, named after the project, is created.
 
 Due to the size of the development team and the fact personnel external to the team is still marginally involved, we use the `inforlife` GitHub personal account[1](#notes) as the organizational account. This allows us to keep things simple (and cheap).
-Because of that, once the repository has been created we add to it all the involved personal as collaborators.
+Because of that, once the repository has been created we add to it all the involved personnel as collaborators.
 
-We add several labels and projects to the repository.
+We add several labels and protection rules to the repository.
 
 The `master` branch is protected with a policy which assures first of all it cannot be accidentally deleted and code can't be directly added to it. In addition, any other branch must have a formal approval by a team member and have passed all the 'required' automatic checks before being mergeable into `master`.
 
@@ -16,7 +16,7 @@ All the required checks are marked as such after the first post to an open Pull 
 
 The GitHub Repository is connected to a CI service [2](#notes) in order to have the entire test suite automatically executed every time new code is pushed to GitHub.
 
-Each application is connected either [CodeShip](https://inforlife.github.io/process/services/codeship.html) or [CircleCI](https://inforlife.github.io/process/services/circleci.html) based on the type of application.
+Each application is connected either to [CodeShip](https://inforlife.github.io/process/services/codeship.html) or to [CircleCI](https://inforlife.github.io/process/services/circleci.html) based on the type of application.
 
 The GitHub Repository is connected to [Code Climate](https://inforlife.github.io/process/services/codeclimate.html). Similar to CI, after pushing code to GitHub, Code Climate runs the code against several static analysis tools to find code-related issues such as style inconsistency, duplication or complexity.
 
@@ -31,6 +31,11 @@ While aiming at 100% code coverage is, in theory, a good thing, in the real worl
 Finally, the GitHub Repository is connected to [Snyk](https://inforlife.github.io/process/services/snyk.html) in order to find vulnerabilities in our code and its dependencies.
 
 The last step we do when setting up a new project is connecting the GitHub Repository to [Docker Hub](https://inforlife.github.io/process/services/dockerhub.html) so Docker images are automatically built every time a new release is drafted on GitHub.
+
+## Documentation site
+We have found the best way to manage the documentation for the final users (the user manual) it is by handling it as source code and checking it into the project repository. This doesn't just allow us to be sure the documentation is updated alongside the application itself, reducing the risk of having outdated documentation, but it also let us automate its publishing with the [use of InfoRBot](https://inforlife.github.io/process/release.html).
+
+To do so, alongside the creation of the project repository, we create a second repository for publishing the documentation named doc-PROJECT-NAME. We set to build a [GitHub Pages site](https://pages.github.com/) from the master branch and add InfoRBot as the only collaborator to the doc repository.
 
 
 #####Notes:

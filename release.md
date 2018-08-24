@@ -18,21 +18,27 @@ Upon posting this message, InfoRBot runs the following checks
 - The Repository REPOSITORY exists.
 - The Milestone MILESTONE exists.
 - All the Issues associated with the Milestone MILESTONE have been closed.
+- All the Issues associated with the Milestone MILESTONE have the required labels (`Approved`/`Confirmed` and `Accepted`).
 - A Release having `tag version` equal to MILESTONE doesn't exist already.
 - The last CI build for the `master` branch (the one which will be released) of the Repository REPOSITORY was successful.
 
 If all the checks are successful, it drafts, from the `master` branch, the MILESTONE release and closes the Milestone MILESTONE. Otherwise, it posts back to the `devops` channel an informative message.
 
+Once the release has been drafted, InfoRBot publishes the updated documentation (the content of the `\doc` directory) to the documentation site.
+
 ## Image build
 
-As soon as the new Release is drafted, [Docker Hub](https://inforlife.github.io/process/services/dockerhub.html) pulls the Release from GitHub and, according to the Dockerfile[1](#notes) it finds inside, builds and stores the two identical images we have configured it to create.
+As soon as the new Release is drafted, [Docker Hub](https://inforlife.github.io/process/services/dockerhub.html) pulls the Release from GitHub and, according to the Dockerfile[1](#notes) it finds inside, builds and stores an image tagged with the same `tag` assigned to the Release (i.e. 2018.1).
 
-Once the images have been built, we are ready for [deployment](https://inforlife.github.io/process/services/deployment.html).
+Once the image has been built, we are ready for [deployment](https://inforlife.github.io/process/services/deployment.html).
 
 Even if the current process may be further improved with the adoption of automated deployment, we have reached a level of automation that allows us to create a new GitHub Release and to have that code ready for production in less than half hour without any human intervention.
 
 This level of automation first and foremost guarantees that every release is done in a predictable way eliminating any possible error or omission due to humans. Therefore, the activities needed to qualify the drafting of a new release (not a deployment) have become superfluous and can be skipped.
 
+## Non-production releases
+
+From time to time it may be necessary to draft a non-production (beta) release. This may be necessary to test integration with other applications or to allow final users to verify if new features have been implemented as they intended. In this case, the release is drafted manually by a team member. Beta releases are tagged as YYYY.N.bX where YYYY is the year of the release, N is the release progressive number, and  X is the beta progressive number. For instance, 2018.1.b2 identifies the second beta of the first release drafted in 2018. In addition, the release is marked as a pre-release so, in GitHub, it is visible the release is non-production ready.   
 
 #####Notes:
 1. A Dockerfile is a file that contains all the instructions necessary to build the Docker Image, these instructions may be to pull a third-party software from a registry or to execute a specific command. For more information refer to the [Docker documentation](https://docs.docker.com/engine/reference/builder/).

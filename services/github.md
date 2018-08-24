@@ -25,6 +25,7 @@ The Labels below are added to the repository
 - Accepted
 - Approved
 - Confirmed
+- Endorsed
 - Enhancement
 - Feature
 - Fix
