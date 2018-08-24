@@ -10,12 +10,18 @@ We structure `enhancements` as follows.
 ## Title
 Few words that identify the enhancement.
 
-An example of name is `Minify the form when displaying the results`.
+An example of a name is `Minify the form when displaying the results`.
 
 ## Description
 A summary of the current (interface) design downside. When possible, the description should link back to the card that originally implemented the feature.
 
-An example of description is
+An example of a description is
+
+{% highlight yaml %}
+When user see the search results, the form is minified so more results are displayed in a single screen (specially on mobile).
+
+This enhances [display search result].
+{% endhighlight %}
 
 The search form does not minify when results are displayed and, due to its size, it may be difficult to notice the results are displayed below it.
 This enhances [display results].
@@ -23,7 +29,7 @@ This enhances [display results].
 ## Conditions of satisfaction
 A checklist that includes all the criteria the feature should meet in order to consider the enhancement completed.
 
-An example of conditions of satisfaction is
+An example of a conditions of satisfaction is
 
 {% highlight yaml %}
 - When results are displayed the search form is minified.

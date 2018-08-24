@@ -10,14 +10,14 @@ We structure `fixes` as follows.
 ## Name
 Few words that identify the correct or expected behavior. Name should include the verb *must*.
 
-An example of name is `Reset password must send only one email to account holder`.
+An example of a name is `Reset password must send only one email to account holder`.
 
 ## Description
 All available information regarding the problem.
 
 When possible, the description should link back to the GitHub Issue that originally implemented the feature.
 
-An example of description is
+An example of a description is
 
 {% highlight yaml %}
 When system administrator initiates a password reset, instead of receiving a single message, the account holder receives one email on each loaded locale.
@@ -28,7 +28,7 @@ This fixes a misbehavior introduced in [reset password].
 ## Conditions of satisfaction
 A checklist that includes all the criteria that must be true to consider the problem solved.
 
-An example of conditions of satisfaction is
+An example of a conditions of satisfaction is
 
 {% highlight yaml %}
 - Only one message is sent to email address associated with the account.

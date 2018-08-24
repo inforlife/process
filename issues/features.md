@@ -4,14 +4,14 @@ title:  "Features"
 ---
 
 Features are those issues that introduce a new functionality to the application or modify (usually extend) an existing one.
-We have decided to express them as modified slightly [user stories](https://www.mountaingoatsoftware.com/agile/user-stories), in this way they can be read as functional specifications.
+We have decided to express them as slightly modified [user stories](https://www.mountaingoatsoftware.com/agile/user-stories), in this way they can be read as functional specifications.
 
 We structure `features` as follows.
 
 ## Title
 Few words that identify the functionality to be added. Whenever possible, prefer names that begin with a verb instead of a noun.
 
-An example of name is `Reset password`.
+An example of a name is `Reset password`.
 
 ## Description
 A short and simple narrative of the feature told from the perspective of the person who will benefit from the new capability (usually a user of the application) that follows the template:
@@ -22,7 +22,7 @@ A short and simple narrative of the feature told from the perspective of the per
 [some reason].
 {% endhighlight %}
 
-An example of description is
+An example of a description is
 
 {% highlight yaml %}
 System administrators can
@@ -33,7 +33,7 @@ forgetful users can access the application.
 ## Conditions of satisfaction
 A checklist that includes all the criteria the feature should meet in order to consider its implementation completed.
 
-An example of conditions of satisfaction is
+An example of a conditions of satisfaction is
 
 {% highlight yaml %}
 - Reset token is created.
@@ -45,7 +45,7 @@ An example of conditions of satisfaction is
 
 Conditions of satisfaction are usually checked as they are implemented.
 
-If new conditions arise, they are added until the corresponding Pull request is not merged.
+If new conditions arise, they are added until the corresponding Pull Request is not merged.
 
 ## Pull request
 Since we have decided to refer the Issue number in a comment when opening Pull requests, GitHub automatically links the Issue to the Pull request that implements it. This allows us to have full traceability.
@@ -57,8 +57,7 @@ Other labels may be assigned according to specific needs.
 ## Attachment *optional*
 Artifacts related to the feature such as wireframes or mockups may be attached to the Issue.
 
-
-# Story Sizing
+# Story sizing
 
 Like many other aspects of software product management, there isn’t a universal right size for a user story. A user story may require from a couple of hours to a few days to be implemented. When defining user stories, we apply the following criteria.
 
@@ -68,3 +67,15 @@ Like many other aspects of software product management, there isn’t a universa
  - A story should be big enough to be deliverable in its own right
 
 In case a feature seems too big, it can be broken down into multiple stories.
+
+# Non-user-related features
+
+Some features may not be related to a group of users. This may happen for applications without a user-interface of for those features that don't require a direct user interaction.
+
+An example of such a feature is
+
+{% highlight yaml %}
+Quality reports have to be automatically generated on a monthly basis.
+{% endhighlight %}
+
+Non-user-related features are formalized in form of [Use Cases](https://inforlife.github.io/process/issues/use-cases.html).
