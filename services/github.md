@@ -60,9 +60,9 @@ Status checks are automatically sent, along side additional data, by the integra
 The status checks currently in place are
 
 - codeclimate (code quality) [Required]
-- codecov/project [Required]
+- codeclimate/diff-coverage [Required]
+- codeclimate/total-coverage [Required]
 - continuous-integration/codeship or ci/circleci [Required]
-- codecov/patch
 - codeclimate/coverage
 
 With our setup, checks marked as `required` must `pass` in order to be able to merge an issue branch into `master`.

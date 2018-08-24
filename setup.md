@@ -18,15 +18,11 @@ The GitHub Repository is connected to a CI service [2](#notes) in order to have 
 
 Each application is connected either to [CodeShip](https://inforlife.github.io/process/services/codeship.html) or to [CircleCI](https://inforlife.github.io/process/services/circleci.html) based on the type of application.
 
-The GitHub Repository is connected to [Code Climate](https://inforlife.github.io/process/services/codeclimate.html). Similar to CI, after pushing code to GitHub, Code Climate runs the code against several static analysis tools to find code-related issues such as style inconsistency, duplication or complexity.
+The GitHub Repository is connected to [Code Climate](https://inforlife.github.io/process/services/codeclimate.html). Similar to CI, after pushing code to GitHub, Code Climate runs the code against several static analysis tools to find code-related issues such as style inconsistency, duplication or complexity. It also verifies [code coverage](https://en.wikipedia.org/wiki/Code_coverage) to assure the automatic test suite that comes with any application fully tests it in all its parts the code.
 
-Code Climate provides also, in beta, [code coverage](https://en.wikipedia.org/wiki/Code_coverage). We add this functionality to our repositories to evaluate it. This may, at some point in the future, became our preferred code coverage tool.
+Code Climate receives from the CI service the report generated while running the entire test suite and posts the results to the GitHub Pull request.
 
-However, to assure the automatic test suite that comes with any application fully tests it in all its parts, we currently rely on [CodeCov](https://inforlife.github.io/process/services/codecov.html).The GitHub Repository and the CI service are connected to CodeCov in order to get code coverage after each push to GitHub.
-
-CodeCov receives from the CI service the report generated while running the entire test suite and posts the results to the GitHub Pull request.
-
-While aiming at 100% code coverage is, in theory, a good thing, in the real world is impracticable or requires more effort than providing benefits. Thus, we have decided to define as acceptable threshold 90% code coverage for all our applications. When this threshold is not reached, `codecov/project` fails and Pull requests can't be merged into `master` until that value is reached again.
+While aiming at 100% code coverage is, in theory, a good thing, in the real world is impracticable or requires more effort than providing benefits. Thus, we have enforced Diff Coverage [3](#notes) with a 90% threshold and Total Coverage. In this way we check both the test coverage of the new code in each pull request (Diff Coverage) and how each pull request impacts overall test coverage of the repository (Total Coverage). When Diff Coverage is under 90% and Total Coverage decreases the relative check fails and Pull requests can't be merged into `master` until that overall coverage increases again.
 
 Finally, the GitHub Repository is connected to [Snyk](https://inforlife.github.io/process/services/snyk.html) in order to find vulnerabilities in our code and its dependencies.
 
@@ -42,3 +38,4 @@ To do so, alongside the creation of the project repository, we create a second r
 
 1. The `inforlife` account is managed by the Development Team Leader.
 2. For more details regarding Continuous Integration may be found at the [CI page](https://inforlife.github.io/process/ci.html)
+3. The Diff Coverage threshold can currently defined only via the Code Climate UI. We will add it to source control as soon as it will be possible to define it in a configuration file.
