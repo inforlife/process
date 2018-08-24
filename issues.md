@@ -28,7 +28,7 @@ According to its category, a GitHub Issue needs specific information to be consi
 <div class="alert info">The only updates allowed without being described in an Issue are "dependency upgrades" such are upgrading the version of the Ruby programming language or that of a Ruby Gem used for the project.
 Any other change in the source code must become from an approved/confirmed GitHub Issue.</div>
 
-## Approval
+## Approval or Confirmation
 
 Once the team member considers the issue ready for implementation, it assigns it to an issue approver. If multiple approvers are collaborating on a repository, the team member simply picks one up.
 
@@ -37,3 +37,13 @@ The approver then reviews the issue and approves (or rejects) its implementation
 We require an approval from QA only for `features` and `enhancements`.
 `Payoffs` and `others` are approved by the development team.
 `Fixes` are confirmed by a team of the development team.
+
+# Nullification
+
+Issues may need to be nullified at some stage of their life. That may happen due to changes in the requirements, because the same outcome can be achieved in a different way or for other reason.
+
+When this happens, according to the stage the Issue is currently in, a different course of action is taken.
+
+- If it hasn't been implemented yet, the Issue is simply closed and the  `Nullified` Label is attached to it.
+- If it is under development, the Pull Request is closed, the issue branch is deleted then, the Issue is closed and the  `Nullified` Label is attached to it.
+- If it has been already merged into `master` (Pull Request closed), a new Issue is created indicating the functionalities provided by the original Issue must be removed. This new issue follows the standard [development process](https://inforlife.github.io/process/development.html).

@@ -29,6 +29,7 @@ The Labels below are added to the repository
 - Enhancement
 - Feature
 - Fix
+- Nullified
 - Payoff
 - Rejected
 
