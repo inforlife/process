@@ -70,7 +70,7 @@ In case a feature seems too big, it can be broken down into multiple stories.
 
 # Non-user-related features
 
-Some features may not be related to a group of users. This may happen for applications without a user-interface of for those features that don't require a direct user interaction.
+Some features may not be related to a group of users. This may happen for applications without a user-interface or for those features that don't require a direct user interaction.
 
 An example of such a feature is
 
