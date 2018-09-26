@@ -11,7 +11,7 @@ GAMP’s approach can be summarized by its V model which relates the specificati
 
 To have a comprehensive overview of the quality of our process, we have compared the GAMP5 framework with our process. The results are below.
 
-![v-model](assets/images/v-model.png){:width="100%"}
+<img src="assets/images/v-model.png">
 
 Instead of managing user requirements in a single document as the GAMP framework suggests, we found more convenient managing them individually as [GitHub Issues](https://guides.github.com/features/issues/). Having the requirements directly in GitHub allows us to have full [traceability](https://inforlife.github.io/process/traceability.html) from definition to release, something impossible to achieve when requirements are managed on paper. Furthermore, since the requirements are online, we have access to them regardless our location. This simplifies their definition, approval, and acceptance.  
 
