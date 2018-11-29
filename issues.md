@@ -36,7 +36,7 @@ The approver then reviews the issue and approves (or rejects) its implementation
 
 We require an approval from QA only for `features` and `enhancements`.
 `Payoffs` and `others` are approved by the development team.
-`Fixes` are confirmed by a team of the development team.
+`Fixes` are confirmed by a member of the development team.
 
 # Nullification
 
