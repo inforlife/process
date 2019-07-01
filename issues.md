@@ -15,6 +15,10 @@ The team member reviews (alone or with other members) the issue in order to gath
 
 When that is not possible, we open Issues on their behalf. In this case, once drafted, the Issue is assigned to the original petitioner who confirms the correctness of the Issue by adding the `Endorsed` label. If the Issue is not correct, petitioner and a team member collaborate to clarify any incorrect point. Then, the Issue is endorsed.
 
+The `support request` label is added to all the issues initiated by an end-user so, we can keep track of the amount of support needed by the users.
+
+Once a team member acknowledges the existence of the new issue, he adds the `addressed` label. In this way, we can calculate the response time to each Issue.
+
 We have divided GitHub Issues into the five categories below.
 
 - [Features](https://inforlife.github.io/process/issues/features.html)
