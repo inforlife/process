@@ -19,6 +19,8 @@ The `support request` label is added to all the issues initiated by an end-user 
 
 Once a team member acknowledges the existence of the new issue, he adds the `addressed` label. In this way, we can calculate the response time to each Issue.
 
+As soon as a new defect is confirmed, the team member who verified it notifies all the users about it. When possible, a temporary workaround should be provided.  Then, he adds the `notified` label to the Issue. The label allows us to keep track of the time elapsed between the notification and release of the fix.
+
 We have divided GitHub Issues into the five categories below.
 
 - [Features](https://inforlife.github.io/process/issues/features.html)
