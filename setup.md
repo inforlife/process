@@ -26,8 +26,6 @@ While aiming at 100% code coverage is, in theory, a good thing, in the real worl
 
 Finally, the GitHub Repository is connected to [Snyk](https://inforlife.github.io/process/services/snyk.html) in order to find vulnerabilities in our code and its dependencies.
 
-The last step we do when setting up a new project is connecting the GitHub Repository to [Docker Hub](https://inforlife.github.io/process/services/dockerhub.html) so Docker images are automatically built every time a new release is drafted on GitHub.
-
 ## Documentation site
 We have found the best way to manage the documentation for the final users (the user manual) it is by handling it as source code and checking it into the project repository. This doesn't just allow us to be sure the documentation is updated alongside the application itself, reducing the risk of having outdated documentation, but it also let us automate its publishing with the [use of InfoRBot](https://inforlife.github.io/process/release.html).
 
