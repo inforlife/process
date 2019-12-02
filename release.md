@@ -30,9 +30,9 @@ We then [archive](https://blog.github.com/2018-06-28-archive-project-board-cards
 
 ## Image build
 
-As soon as the new Release is drafted, [Docker Hub](https://inforlife.github.io/process/services/dockerhub.html) pulls the Release from GitHub and, according to the Dockerfile[1](#notes) it finds inside, builds and stores an image tagged with the same `tag` assigned to the Release (i.e. 2018.1).
+When the new Release is drafted, the [Publish Docker Image To GitHub Packages](https://github.com/inforlife/publish-docker-image-to-github-packages-action) [Action](https://github.com/features/actions) runs and, according to the Dockerfile[1](#notes) it finds inside the repo, builds a Docker image tagged with the same `tag` assigned to the Release (i.e. 2018.1) and publishes it to the [InfoRLife's Registry](https://github.com/inforlife/registry) as [GitHub Package](https://github.com/features/packages).
 
-Once the image is built, we receive a notification in a dedicated [Slack](https://inforlife.github.io/process/services/slack.html) channel and we are ready for [deployment](https://inforlife.github.io/process/services/deployment.html).
+Once the image is published, we receive a notification in a dedicated [Slack](https://inforlife.github.io/process/services/slack.html) channel and we are ready for [deployment](https://inforlife.github.io/process/services/deployment.html).
 
 Even if the current process may be further improved with the adoption of automated deployment, we have reached a level of automation that allows us to create a new GitHub Release and to have that code ready for production in less than half hour without any human intervention.
 
